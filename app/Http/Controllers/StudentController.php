@@ -26,9 +26,9 @@ class StudentController extends Controller
         
         foreach ($schools as $school) {
 
-            foreach($school as $sc) {
+            foreach($school->$student as $sc) {
                 echo"<pre>";
-                print_r($sc);
+                print_r($sc->name);
             }
             
         }

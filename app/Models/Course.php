@@ -16,7 +16,7 @@ class Course extends Model
 
     public $timestamps = false;
 
-    public function student() {
-        return $this->belongsTo();
-    }
+    // public function student() {
+    //     return $this->belongsTo();
+    // }
 }

@@ -18,8 +18,8 @@ class Student extends Model
     
     public $timestamps = false;
 
-    public function courses() {
+    // public function courses() {
 
-        return $this->hasMany(Course::class);
-    }
+    //     return $this->hasMany(Course::class);
+    // }
 }

@@ -9,7 +9,13 @@ class School extends Model
 {
     use HasFactory;
 
+
+    public $timestamps = false;
+    
     protected $fillable = [
         "school"
     ];
+    public function studet() {
+            return $this->hasManyThrough(Student::class, Course::class);
+    }
 }
